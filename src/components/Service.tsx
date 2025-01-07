@@ -12,7 +12,7 @@ const Service = () => {
   return (
     <>
       <div
-        className="h-[90vh] bg-slate-600 pt-[90px] flex flex-col items-center"
+        className="h-screen bg-slate-600 pt-[90px] flex flex-col items-center"
         style={{ background: `url(${serviceBg})` }}
       >
         <h1 className="text-4xl md:text-5xl lg:text-[65px] font-bold text-center my-7 md:my-7 text-[#FFB158] mb-7">

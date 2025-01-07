@@ -1,39 +1,102 @@
-"use client";
-import { menuItem } from "@/constants/data";
+"use client"; // Add this directive at the very top
+
+import Image from "next/image";
 import { useState } from "react";
+import { kodeinTeknoLogo } from "@/assets";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
-    <nav className="flex justify-between items-center px-4 md:px-[220px] bg-slate-600 h-16">
-      {/* Logo */}
-      <h1 className="text-2xl sm:text-3xl font-bold text-white">LOGO</h1>
+    <nav className="bg-white shadow-md fixed inset-x-0 z-20">
+      <div className="container mx-auto px-4 flex justify-between items-center py-4">
+        {/* Logo */}
+        <div className="flex items-center max-w-40">
+        <Image src={kodeinTeknoLogo} alt="logo-nav" />
+        </div>
 
-      {/* Hamburger Button */}
-      <button className="md:hidden text-white text-3xl" onClick={toggleMenu}>
-        ☰
-      </button>
-
-      {/* Menu */}
-      <ul
-        className={`absolute md:static top-16 left-0 w-full md:w-auto md:flex bg-slate-600 md:bg-transparent flex-col md:flex-row items-center md:gap-8 font-semibold text-lg md:text-xl transition-all duration-300 ${
-          isMenuOpen ? "block" : "hidden"
-        }`}
-      >
-        {menuItem.map((item, index) => (
-          <li
-            key={index}
-            className="p-4 md:p-0 text-white hover:text-gray-300 cursor-pointer"
-          >
-            <a href={item.href}>{item.label}</a>
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex space-x-6 text-gray-700">
+          <li>
+            <a href="#" className="hover:text-orange-500">
+              Beranda
+            </a>
           </li>
-        ))}
-      </ul>
+          <li>
+            <a href="#" className="hover:text-orange-500">
+              Layanan
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-orange-500">
+              Team
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-orange-500">
+              Portofolio
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-orange-500">
+              Testimoni
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-orange-500">
+              Kontak
+            </a>
+          </li>
+        </ul>
+
+        {/* Hamburger Menu (Mobile) */}
+        <button
+          className="block md:hidden text-gray-700 focus:outline-none"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <div className="h-1 w-6 bg-gray-700 mb-1"></div>
+          <div className="h-1 w-6 bg-gray-700 mb-1"></div>
+          <div className="h-1 w-6 bg-gray-700"></div>
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white shadow-md">
+          <ul className="space-y-4 text-gray-700 p-4">
+            <li>
+              <a href="#" className="block hover:text-orange-500">
+                Beranda
+              </a>
+            </li>
+            <li>
+              <a href="#" className="block hover:text-orange-500">
+                Layanan
+              </a>
+            </li>
+            <li>
+              <a href="#" className="block hover:text-orange-500">
+                Team
+              </a>
+            </li>
+            <li>
+              <a href="#" className="block hover:text-orange-500">
+                Portofolio
+              </a>
+            </li>
+            <li>
+              <a href="#" className="block hover:text-orange-500">
+                Testimoni
+              </a>
+            </li>
+            <li>
+              <a href="#" className="block hover:text-orange-500">
+                Kontak
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

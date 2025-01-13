@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
         {/* Logo */}
         <div className="flex items-center max-w-40">
-        <Image src={kodeinTeknoLogo} alt="logo-nav" />
+          <Image src={kodeinTeknoLogo} alt="logo-nav" />
         </div>
 
         {/* Desktop Menu */}

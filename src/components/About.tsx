@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { aboutImg } from "@/assets"; // Keep your existing import
+import { aboutImg } from "@/assets"; 
 
 const About = () => {
   return (
     <div className="h-auto md:h-[95vh] mb-10">
       <div className="flex flex-col lg:flex-row-reverse mx-4 md:mx-12 lg:mx-[200px] mt-8 md:mt-12 items-center gap-8 lg:gap-16">
         {/* Text Content */}
-        <div className="flex flex-col md:gap-2 lg:gap-2 text-center lg:text-right items-center lg:items-end">
+        <div className="flex flex-col md:gap-2 lg:gap-2 text-center lg:text-right items-center lg:items-end flex-2">
           <h1 className="text-4xl md:text-5xl lg:text-[65px] font-bold text-center my-7 md:my-7 underline underline-offset-[24px] text-[#FFB158]">
             Tentang Kami
           </h1>
@@ -17,7 +17,7 @@ const About = () => {
 
         {/* Image Section */}
         <Image
-          className="w-[300px] md:w-[450px] lg:w-[694px] h-auto mx-auto lg:mx-0 order-first lg:order-last"
+          className="w-[300px] md:w-[450px] lg:w-[694px] h-auto mx-auto lg:mx-0 order-first lg:order-last flex-1"
           src={aboutImg}
           alt="Tentang Kami Image"
         />

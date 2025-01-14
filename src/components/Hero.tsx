@@ -4,7 +4,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div
-      className="bg-[#1B2735] flex justify-center items-center bg-cover bg-no-repeat pt-14 h-screen"
+      className="bg-[#1B2735] flex justify-center items-center bg-cover bg-no-repeat pt-14 h-screen" id="hero"
       style={{ backgroundImage: `url(${heroBg.src})` }}
     >
       <div className="container mx-auto px-4 md:px-8 py-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-20">

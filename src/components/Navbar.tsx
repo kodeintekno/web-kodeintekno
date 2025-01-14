@@ -18,32 +18,32 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-gray-700">
           <li>
-            <a href="#" className="hover:text-orange-500">
+            <a href="#hero" className="hover:text-orange-500">
               Beranda
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-orange-500">
+            <a href="#about" className="hover:text-orange-500">
+              Tentang
+            </a>
+          </li>
+          <li>
+            <a href="#service" className="hover:text-orange-500">
               Layanan
             </a>
           </li>
-          <li>
-            <a href="#" className="hover:text-orange-500">
-              Team
-            </a>
-          </li>
-          <li>
+          {/* <li>
             <a href="#" className="hover:text-orange-500">
               Portofolio
             </a>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <a href="#" className="hover:text-orange-500">
               Testimoni
             </a>
-          </li>
+          </li> */}
           <li>
-            <a href="#" className="hover:text-orange-500">
+            <a href="#contact" className="hover:text-orange-500">
               Kontak
             </a>
           </li>

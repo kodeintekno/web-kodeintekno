@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ContactUs = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8" id="contact">
       <h1 className="text-4xl md:text-5xl lg:text-[65px] font-bold text-center my-7 text-[#FFB158]">
         Hubungi Profesional
       </h1>

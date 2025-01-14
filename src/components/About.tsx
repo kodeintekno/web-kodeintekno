@@ -3,7 +3,7 @@ import { aboutImg } from "@/assets";
 
 const About = () => {
   return (
-    <div className="h-auto md:h-[95vh] mb-10">
+    <div className="h-auto md:h-[95vh] mb-10" id="about">
       <div className="flex flex-col lg:flex-row-reverse mx-4 md:mx-12 lg:mx-[200px] mt-8 md:mt-12 items-center gap-8 lg:gap-16">
         {/* Text Content */}
         <div className="flex flex-col md:gap-2 lg:gap-2 text-center lg:text-right items-center lg:items-end flex-2">

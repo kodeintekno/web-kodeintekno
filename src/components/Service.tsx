@@ -15,7 +15,7 @@ import {
 const Service = () => {
   return (
     <div
-      className="min-h-screen pt-[90px] flex flex-col items-center bg-cover bg-no-repeat pb-[90px] lg:"
+      className="min-h-screen pt-[90px] flex flex-col items-center bg-cover bg-no-repeat pb-[90px] lg:" id="service"
       style={{ backgroundImage: `url(${serviceBg.src})` }}
     >
       <h1 className="text-4xl md:text-5xl lg:text-[65px] font-bold text-center my-7 text-[#FFB158] mb-7">

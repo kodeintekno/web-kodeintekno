@@ -6,12 +6,13 @@ const Footer = () => {
     <footer className="bg-[#0D1B2A] text-white px-14 py-10 lg:px-0 flex items-center flex-col">
       <div className="container flex flex-col lg:flex-row justify-between gap-10 mt-14 items-start">
         {/* Logo dan Alamat */}
+        <a href="#hero">
         <Image
           src={kodeinTeknoLogo2}
           alt="Kodein Tekno"
           width={200}
           height={80}
-        />
+        /></a>
         <div>
           <h3 className="font-semibold text-xl mb-4">Alamat</h3>
           <p className="mt-4 text-lg font-light w-[340px]">
@@ -25,28 +26,28 @@ const Footer = () => {
           <h3 className="font-semibold text-xl mb-4">Navigasi</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:underline text-lg font-light">
-                Home
+              <a href="#hero" className="hover:underline text-lg font-light">
+                Beranda
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline text-lg font-light">
-                About Us
+              <a href="#about" className="hover:underline text-lg font-light">
+                Tentang
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline text-lg font-light">
-                Services
+              <a href="#service" className="hover:underline text-lg font-light">
+                Layanan
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline text-lg font-light">
+              {/* <a href="#" className="hover:underline text-lg font-light">
                 Team
-              </a>
+              </a> */}
             </li>
             <li>
-              <a href="#" className="hover:underline text-lg font-light">
-                Contact Us
+              <a href="#contact" className="hover:underline text-lg font-light">
+                kontak
               </a>
             </li>
           </ul>

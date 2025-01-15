@@ -15,7 +15,8 @@ import {
 const Service = () => {
   return (
     <div
-      className="min-h-screen pt-[90px] flex flex-col items-center bg-cover bg-no-repeat pb-[90px] lg:" id="service"
+      className="min-h-screen pt-[90px] flex flex-col items-center bg-cover bg-no-repeat pb-[90px] lg:"
+      id="service"
       style={{ backgroundImage: `url(${serviceBg.src})` }}
     >
       <h1 className="text-4xl md:text-5xl lg:text-[65px] font-bold text-center my-7 text-[#FFB158] mb-7">
@@ -27,16 +28,19 @@ const Service = () => {
         hingga pemasaran digital.
       </p>
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 px-4"> */}
-      <Carousel className="w-full max-w-96 lg:max-w-[1200px]">
+      <Carousel className="w-full max-w-[351px] md:max-w-[716px] lg:max-w-[1555px] ">
         <CarouselContent>
           {serviceData.map((data, index) => (
-            <CarouselItem className="lg:basis-1/3" key={index}>
+            <CarouselItem
+              className="md:basis-1/2 lg:basis-1/4 flex justify-center"
+              key={index}
+            >
               <Card {...data} />
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="flex lg:hidden" />
+        <CarouselNext className="flex lg:hidden" />
       </Carousel>
       {/* </div> */}
     </div>

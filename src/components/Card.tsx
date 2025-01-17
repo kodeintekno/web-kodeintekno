@@ -9,11 +9,11 @@ interface CardProps {
 const Card = ({ img, title, deskripsi }: CardProps) => {
   return (
     <>
-      <div className="flex flex-col items-center bg-white w-[350px] h-[480px] rounded-xl">
-        <Image alt="" src={img} className="w-[130px] mt-12" />
+      <div className="flex flex-col items-center bg-white w-[270px] h-[400px] lg:w-[350px] lg:h-[480px] rounded-xl">
+        <Image alt="" src={img} className="w-[90px] lg:w-[130px] mt-12" />
 
-        <h1 className="font-semibold text-2xl my-5">{title}</h1>
-        <p className="text-xl w-[70%] text-center font-medium mb-5">
+        <h1 className="font-semibold text-xl lg:text-2xl my-5">{title}</h1>
+        <p className="text-base lg:text-xl w-[70%] text-center font-medium mb-5">
           {deskripsi}
         </p>
 

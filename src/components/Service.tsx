@@ -6,8 +6,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 // import Image from "next/image";
@@ -39,8 +37,6 @@ const Service = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="flex lg:hidden" />
-        <CarouselNext className="flex lg:hidden" />
       </Carousel>
       {/* </div> */}
     </div>

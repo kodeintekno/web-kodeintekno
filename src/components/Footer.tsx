@@ -3,16 +3,17 @@ import { kodeinTeknoLogo2, instagramLogo, facebookLogo } from "@/assets"; // Ses
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0D1B2A] text-white px-14 py-10 lg:px-0 flex items-center flex-col">
+    <footer className="bg-[#0D1B2A] text-white px-10 py-10 lg:px-0 flex items-center flex-col">
       <div className="container flex flex-col lg:flex-row justify-between gap-10 mt-14 items-start">
         {/* Logo dan Alamat */}
         <a href="#hero">
-        <Image
-          src={kodeinTeknoLogo2}
-          alt="Kodein Tekno"
-          width={200}
-          height={80}
-        /></a>
+          <Image
+            src={kodeinTeknoLogo2}
+            alt="Kodein Tekno"
+            width={200}
+            height={80}
+          />
+        </a>
         <div>
           <h3 className="font-semibold text-xl mb-4">Alamat</h3>
           <p className="mt-4 text-lg font-light w-[340px]">

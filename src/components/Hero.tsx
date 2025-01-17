@@ -1,5 +1,6 @@
 import { heroAsset, heroBg } from "@/assets";
 import Image from "next/image";
+import {styles} from "./template"
 
 const Hero = () => {
   return (
@@ -9,8 +10,8 @@ const Hero = () => {
     >
       <div className="container mx-auto px-4 md:px-8 py-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-20">
         {/* Left Section */}
-        <div className="text-center lg:text-left text-white space-y-6">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#ffb158] to-[#f59e0b] text-transparent bg-clip-text">
+        <div className={`  text-center lg:text-left text-white space-y-6`}>
+        <h1 className={` ${styles.heroHeadText}text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#ffb158] to-[#f59e0b] text-transparent bg-clip-text`}>
   Creative Digital Agency
 </h1>
 
@@ -19,7 +20,7 @@ const Hero = () => {
             untuk Mendukung Pertumbuhan dan Kesuksesan Bisnis Anda!
           </p>
           <div>
-          <button className="px-10 py-3 border-2 border-[#F59E0B] text-[#F59E0B] font-semibold rounded-full shadow-md hover:bg-[#F59E0B] hover:text-black transition duration-300 text-lg md:text-xl lg:text-2xl">
+          <button className=" px-10 py-3 border-2 border-[#F59E0B] text-[#F59E0B] font-semibold rounded-full shadow-md hover:bg-[#F59E0B] hover:text-black transition duration-300 text-lg md:text-xl lg:text-2xl">
   Mulai Konsultasi
 </button>
 

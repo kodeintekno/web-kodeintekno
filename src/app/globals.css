@@ -61,6 +61,9 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
+html, body {
+  font-family: 'Poppins', sans-serif;
+}
 
 @layer base {
   * {

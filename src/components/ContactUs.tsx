@@ -1,10 +1,11 @@
 import { contactImg } from "@/assets";
 import Image from "next/image";
+import {styles} from "./template";
 
 const ContactUs = () => {
   return (
     <div className="container mx-auto px-4 py-8" id="contact">
-      <h1 className="text-4xl md:text-5xl lg:text-[65px] font-bold text-center my-7 text-[#FFB158]">
+      <h1 className={` ${styles.heroHeadText} pt-5 text-center`}>
         Hubungi Profesional
       </h1>
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-10 lg:gap-20 h-auto lg:h-[80vh]">

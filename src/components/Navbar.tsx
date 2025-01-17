@@ -65,21 +65,21 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-md">
           <ul className="space-y-4 text-gray-700 p-4">
             <li>
-              <a href="#" className="block hover:text-orange-500">
+              <a href="#hero" className="block hover:text-orange-500">
                 Beranda
               </a>
             </li>
             <li>
-              <a href="#" className="block hover:text-orange-500">
+              <a href="#about" className="block hover:text-orange-500">
+                Tentang
+              </a>
+            </li>
+            <li>
+              <a href="#service" className="block hover:text-orange-500">
                 Layanan
               </a>
             </li>
-            <li>
-              <a href="#" className="block hover:text-orange-500">
-                Team
-              </a>
-            </li>
-            <li>
+            {/* <li>
               <a href="#" className="block hover:text-orange-500">
                 Portofolio
               </a>
@@ -88,9 +88,9 @@ const Navbar = () => {
               <a href="#" className="block hover:text-orange-500">
                 Testimoni
               </a>
-            </li>
+            </li> */}
             <li>
-              <a href="#" className="block hover:text-orange-500">
+              <a href="#contact" className="block hover:text-orange-500">
                 Kontak
               </a>
             </li>

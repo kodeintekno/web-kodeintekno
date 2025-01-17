@@ -1,5 +1,6 @@
 import { serviceData } from "@/data/constant";
 import Card from "./Card";
+import {styles} from "./template";
 
 import { serviceBg } from "@/assets";
 import {
@@ -17,7 +18,7 @@ const Service = () => {
       id="service"
       style={{ backgroundImage: `url(${serviceBg.src})` }}
     >
-      <h1 className="text-4xl md:text-5xl lg:text-[65px] font-bold text-center my-7 text-[#FFB158] mb-7">
+      <h1 className={` ${styles.heroHeadText} pb-5`}>
         Layanan Kami
       </h1>
       <p className="text-xl md:text-lg lg:text-2xl max-w-full md:max-w-[80%] lg:max-w-[64%] lg:leading-10 text-center text-white mb-[50px]">

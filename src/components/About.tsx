@@ -1,24 +1,25 @@
 import Image from "next/image";
 import { aboutImg } from "@/assets"; 
-import {styles} from "./template";
+import { styles } from "./template";
 
 const About = () => {
   return (
-    <div className="h-auto md:h-[95vh] mb-10" id="about">
+    <div className="h-auto  mb-10" id="about">
       <div className="flex flex-col lg:flex-row-reverse mx-4 md:mx-12 lg:mx-[200px] mt-8 md:mt-12 items-center gap-8 lg:gap-16">
         {/* Text Content */}
-        <div className="flex flex-col md:gap-2 lg:gap-2 text-center lg:text-right items-center lg:items-end  basis-2/3">
-          <h1 className={` ${styles.heroHeadText} pb-5`}>
+        <div className="flex flex-col md:gap-2 lg:gap-4 text-center lg:text-right items-center lg:items-end basis-3/4">
+          <h1 className={` ${styles.heroHeadText} pb-5 text-2xl md:text-4xl lg:text-5xl font-bold`}>
             Tentang Kami
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl max-w-full md:max-w-[80%] lg:max-w-[90%] mx-auto lg:mx-0 lg:leading-9">
-            <span className="font-bold">Kodeintekno</span> adalah mitra strategis Anda dalam transformasi digital. Kami menghadirkan solusi-solusi inovatif yang menggabungkan kreativitas dan teknologi terkini. Dengan portofolio layanan lengkap mulai dari pengembangan website, desain grafis, hingga pemasaran digital, kami membantu bisnis Anda mencapai pertumbuhan yang signifikan dan berkelanjutan.
+          <p className="text-sm md:text-base lg:text-lg max-w-full md:max-w-[80%] lg:max-w-[90%] mx-auto lg:mx-0 leading-relaxed lg:leading-9">
+            <span className="font-bold">Kodeintekno</span> adalah mitra strategis Anda dalam transformasi digital, menghadirkan solusi inovatif yang menggabungkan kreativitas, teknologi terkini, dan pendekatan strategis. Dengan layanan seperti pengembangan website, desain grafis, dan pemasaran digital, kami membantu bisnis Anda tumbuh dan beradaptasi di era modern. Bersama Kodeintekno, wujudkan transformasi digital yang berdampak nyata bagi kesuksesan Anda.
+            
           </p>
         </div>
 
         {/* Image Section */}
         <Image
-          className="w-[300px] md:w-[450px] lg:w-[694px] h-auto mx-auto lg:mx-0 order-first lg:order-last basis-1/3"
+          className="w-[200px] md:w-[300px] lg:w-[350px] h-auto mx-auto lg:mx-0 order-first lg:order-last basis-1/4"
           src={aboutImg}
           alt="Tentang Kami Image"
         />

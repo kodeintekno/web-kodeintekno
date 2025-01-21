@@ -44,13 +44,13 @@ const Service = () => {
       </p>
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 px-4"> */}
       <Carousel
-        className="w-full max-w-[351px] md:max-w-[716px] lg:max-w-[1555px]"
+        className="w-full md:max-w-[620px] lg:max-w-[1200px] xl:max-w-[1650px]"
         setApi={setApi}
       >
         <CarouselContent>
           {serviceData.map((data, index) => (
             <CarouselItem
-              className="md:basis-1/2 lg:basis-1/4 flex justify-center"
+              className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 flex justify-center"
               key={index}
             >
               <Card {...data} />

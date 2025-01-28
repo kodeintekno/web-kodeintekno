@@ -22,7 +22,7 @@ const Footer = () => {
         </Link>
         <div>
           <h3 className="font-semibold text-xl mb-4">Alamat</h3>
-          <p className="mt-4 text-sm w-[340px] leading-relaxed">
+          <p className="mt-4 text-sm w-full sm:w-[330px] leading-relaxed">
             Harvest City, Cluster Orchid A, Blok OA 12 No. 18, Ragemanunggal,
             Setu - Kabupaten Bekasi, Jawa Barat - 17320
           </p>

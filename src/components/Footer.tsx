@@ -1,19 +1,24 @@
+"use client";
+
 import Image from "next/image";
-import { kodeinTeknoLogo2, instagramLogo, facebookLogo } from "@/assets"; // Sesuaikan dengan path logo Anda
+import { kodeinTeknoLogo2, instagramLogo, facebookLogo } from "@/assets";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="bg-[#0D1B2A] text-white px-10 py-10 lg:px-0 flex items-center flex-col">
       <div className="container flex flex-col lg:flex-row justify-between gap-10 mt-14 items-start">
         {/* Logo dan Alamat */}
-        <a href="#hero">
-          <Image
-            src={kodeinTeknoLogo2}
-            alt="Kodein Tekno"
-            width={200}
-            height={80}
-          />
-        </a>
+        <Link
+          href="/"
+          className="cursor-pointer"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <Image src={kodeinTeknoLogo2} alt="logo-nav" />
+        </Link>
         <div>
           <h3 className="font-semibold text-xl mb-4">Alamat</h3>
           <p className="mt-4 text-lg font-light w-[340px]">
@@ -70,16 +75,24 @@ const Footer = () => {
               <span className="w-6 h-6 flex items-center justify-center rounded-full">
                 <Image src={facebookLogo} alt="" className="fill-white" />
               </span>
-              <a href="#" className="hover:underline">
-                Kodeintekno
+              <a
+                href="https://www.facebook.com/profile.php?id=100090626140021"
+                target="_blank"
+                className="hover:underline"
+              >
+                Kodein Tekno
               </a>
             </li>
             <li className="flex items-center gap-2">
               <span className="w-6 h-6 flex items-center justify-center rounded-full">
                 <Image src={instagramLogo} alt="" />
               </span>
-              <a href="#" className="hover:underline">
-                @Kodein
+              <a
+                href="https://www.instagram.com/kodeintekno/"
+                className="hover:underline"
+                target="_blank"
+              >
+                @kodeintekno
               </a>
             </li>
           </ul>

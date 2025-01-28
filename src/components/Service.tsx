@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { CarouselApi } from "@/components/ui/carousel";
 import { serviceData } from "@/data/constant";
 import Card from "./Card";
-import { styles } from "./template";
+import { styles } from "./styles";
 
 import { serviceBg } from "@/assets";
 import React from "react";
@@ -32,11 +32,11 @@ const Service = () => {
   }, [api]);
   return (
     <div
-      className="min-h-screen pt-[90px] flex flex-col items-center bg-cover bg-no-repeat pb-[90px] lg:"
+      className="min-h-screen flex flex-col items-center bg-cover bg-no-repeat py-24"
       id="service"
       style={{ backgroundImage: `url(${serviceBg.src})` }}
     >
-      <h1 className={` ${styles.heroHeadText} pb-5`}>Layanan Kami</h1>
+      <h1 className={` ${styles.heroHeadText}`}>Layanan Kami</h1>
       <p className="max-w-[80%] md:max-w-[80%] lg:max-w-[64%] lg:leading-10 text-center text-white mb-[50px]">
         Kami menyediakan berbagai layanan digital terpadu yang dirancang untuk
         mendukung perkembangan bisnis Anda, mulai dari pengembangan website
@@ -64,7 +64,7 @@ const Service = () => {
             key={index}
             className={cn(
               "size-3 rounded-full transition-colors duration-500",
-              current - 1 === index ? "bg-white" : "bg-gray-700"
+              current - 1 === index ? "bg-white" : "bg-gray-700",
             )}
           ></div>
         ))}

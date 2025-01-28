@@ -1,6 +1,6 @@
 import { heroAsset, heroBg } from "@/assets";
 import Image from "next/image";
-import { styles } from "./template";
+import { styles } from "./styles";
 
 const Hero = () => {
   return (
@@ -12,11 +12,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:px-8 py-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-20">
         {/* Left Section */}
         <div className={`text-center lg:text-left text-white space-y-6`}>
-          <h1
-            className={` ${styles.heroHeadText} text-3xl md:text-5xl lg:text-7xl font-bold bg-gradient-to-r from-[#ffb158] to-[#f59e0b] text-transparent bg-clip-text`}
-          >
-            Creative Digital Agency
-          </h1>
+          <h1 className={`${styles.heroHeadText} `}>Creative Digital Agency</h1>
 
           <p className="text-sm md:text-base lg:text-xl leading-relaxed max-w-[650px] mx-auto lg:mx-0">
             Tempat Anda Menemukan Berbagai Solusi Digital dan Teknologi Terbaik

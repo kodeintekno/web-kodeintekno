@@ -1,18 +1,32 @@
-"use client"; // Add this directive at the very top
+"use client";
 
 import Image from "next/image";
 import { useState } from "react";
 import { kodeinTeknoLogo } from "@/assets";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleMenuClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="bg-white shadow-md fixed inset-x-0 z-20">
-      <div className="container mx-auto px-4 flex justify-between items-center py-4">
+      <div className="container mx-auto px-4 flex justify-between items-center py-6">
         {/* Logo */}
         <div className="flex items-center max-w-40">
-          <Image src={kodeinTeknoLogo} alt="logo-nav" />
+          <Link
+            href="/"
+            className="cursor-pointer"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            <Image src={kodeinTeknoLogo} alt="logo-nav" />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
@@ -54,9 +68,21 @@ const Navbar = () => {
           className="block md:hidden text-gray-700 focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <div className="h-1 w-6 bg-gray-700 mb-1"></div>
-          <div className="h-1 w-6 bg-gray-700 mb-1"></div>
-          <div className="h-1 w-6 bg-gray-700"></div>
+          <div
+            className={`h-1 w-6 bg-gray-700 mb-1 transition-transform duration-300 ${
+              isMenuOpen ? "rotate-45 translate-y-2" : ""
+            }`}
+          ></div>
+          <div
+            className={`h-1 w-6 bg-gray-700 mb-1 transition-opacity duration-300 ${
+              isMenuOpen ? "opacity-0" : ""
+            }`}
+          ></div>
+          <div
+            className={`h-1 w-6 bg-gray-700 transition-transform duration-300 ${
+              isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          ></div>
         </button>
       </div>
 
@@ -65,17 +91,29 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-md">
           <ul className="space-y-4 text-gray-700 p-4">
             <li>
-              <a href="#hero" className="block hover:text-orange-500">
+              <a
+                href="#hero"
+                className="block hover:text-orange-500"
+                onClick={handleMenuClick}
+              >
                 Beranda
               </a>
             </li>
             <li>
-              <a href="#about" className="block hover:text-orange-500">
+              <a
+                href="#about"
+                className="block hover:text-orange-500"
+                onClick={handleMenuClick}
+              >
                 Tentang
               </a>
             </li>
             <li>
-              <a href="#service" className="block hover:text-orange-500">
+              <a
+                href="#service"
+                className="block hover:text-orange-500"
+                onClick={handleMenuClick}
+              >
                 Layanan
               </a>
             </li>
@@ -90,7 +128,11 @@ const Navbar = () => {
               </a>
             </li> */}
             <li>
-              <a href="#contact" className="block hover:text-orange-500">
+              <a
+                href="#contact"
+                className="block hover:text-orange-500"
+                onClick={handleMenuClick}
+              >
                 Kontak
               </a>
             </li>

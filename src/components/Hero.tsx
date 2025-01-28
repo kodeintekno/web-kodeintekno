@@ -9,12 +9,12 @@ const Hero = () => {
       id="hero"
       style={{ backgroundImage: `url(${heroBg.src})` }}
     >
-      <div className="container mx-auto px-4 md:px-8 py-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-20">
+      <div className="container mx-auto px-4 md:px-8 py-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-6 lg:gap-20">
         {/* Left Section */}
-        <div className={`text-center lg:text-left text-white space-y-2`}>
+        <div className={`text-center lg:text-left text-white `}>
           <h1 className={`${styles.heroHeadText} `}>Creative Digital Agency</h1>
 
-          <p className={`${styles.paragrafText}`}>
+          <p className={`${styles.paragrafText} pb-8 sm:pb-16`}>
             Tempat Anda Menemukan Berbagai Solusi Digital dan Teknologi Terbaik
             untuk Mendukung Pertumbuhan dan Kesuksesan Bisnis Anda!
           </p>

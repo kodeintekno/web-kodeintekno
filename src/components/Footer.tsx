@@ -58,8 +58,7 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-xl mb-4">Kontak</h3>
           <ul className="space-y-2 text-lg font-light">
-            <li>+64 123 - 456 - 789</li>
-            <li>+64 123 - 456 - 789</li>
+            <li>+62 821-7027-0241</li>
           </ul>
         </div>
 

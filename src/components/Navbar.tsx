@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-gray-700">
           <li>
-            <a href="#hero" className="hover:text-orange-500">
+            <a href="#hero" className="hover:bg-blue-400">
               Beranda
             </a>
           </li>

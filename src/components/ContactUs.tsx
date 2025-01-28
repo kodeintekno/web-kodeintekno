@@ -23,7 +23,7 @@ const ContactUs = () => {
               type="text"
               id="name"
               name="name"
-              className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="w-full border border-gray-300 rounded-md p-2 text-sm md:text-base lg:text-lg placeholder:text-sm md:placeholder:text-base lg:placeholder:text-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder="Nama Lengkap Anda"
             />
           </div>
@@ -40,7 +40,7 @@ const ContactUs = () => {
               type="email"
               id="email"
               name="email"
-              className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="w-full border border-gray-300 rounded-md p-2 text-sm md:text-base lg:text-lg placeholder:text-sm md:placeholder:text-base lg:placeholder:text-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder="Alamat Email Anda"
             />
           </div>
@@ -56,7 +56,7 @@ const ContactUs = () => {
             <textarea
               id="description"
               name="description"
-              className="w-full h-[150px] border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="w-full h-[150px] border border-gray-300 rounded-md p-2 text-sm md:text-base lg:text-lg placeholder:text-sm md:placeholder:text-base lg:placeholder:text-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder="Tulis kebutuhan Anda di sini"
             />
           </div>

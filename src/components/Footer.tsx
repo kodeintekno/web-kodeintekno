@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { kodeinTeknoLogo2, instagramLogo, facebookLogo } from "@/assets";
 import Link from "next/link";
+import { menuItem } from "@/data/constant";
 
 const Footer = () => {
   return (
@@ -21,7 +22,7 @@ const Footer = () => {
         </Link>
         <div>
           <h3 className="font-semibold text-xl mb-4">Alamat</h3>
-          <p className="mt-4 text-lg font-light w-[340px]">
+          <p className="mt-4 text-sm w-[340px] leading-relaxed">
             Harvest City, Cluster Orchid A, Blok OA 12 No. 18, Ragemanunggal,
             Setu - Kabupaten Bekasi, Jawa Barat - 17320
           </p>
@@ -30,39 +31,21 @@ const Footer = () => {
         {/* Navigasi */}
         <div>
           <h3 className="font-semibold text-xl mb-4">Navigasi</h3>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a href="#hero" className="hover:underline text-lg font-light">
-                Beranda
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="hover:underline text-lg font-light">
-                Tentang
-              </a>
-            </li>
-            <li>
-              <a href="#service" className="hover:underline text-lg font-light">
-                Layanan
-              </a>
-            </li>
-            <li>
-              {/* <a href="#" className="hover:underline text-lg font-light">
-                Team
-              </a> */}
-            </li>
-            <li>
-              <a href="#contact" className="hover:underline text-lg font-light">
-                kontak
-              </a>
-            </li>
+          <ul className="space-y-2 text-sm leading-relaxed">
+            {menuItem.map((item, index) => (
+              <li key={index}>
+                <a href={item.href} className="hover:underline text-sm">
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
         {/* Kontak */}
         <div>
           <h3 className="font-semibold text-xl mb-4">Kontak</h3>
-          <ul className="space-y-2 text-lg font-light">
+          <ul className="space-y-2 text-sm">
             <li>+62 821-7027-0241</li>
           </ul>
         </div>
@@ -70,7 +53,7 @@ const Footer = () => {
         {/* Sosial Media */}
         <div>
           <h3 className="font-semibold text-xl mb-4">Sosial Media</h3>
-          <ul className="space-y-2 text-lg font-light">
+          <ul className="space-y-2 text-sm">
             <li className="flex items-center gap-2">
               <span className="w-6 h-6 flex items-center justify-center rounded-full">
                 <Image src={facebookLogo} alt="" className="fill-white" />

@@ -9,7 +9,7 @@ const About = () => {
         {/* Text Content */}
         <div className="flex flex-col md:gap-2 lg:gap-4 text-center lg:text-right items-center lg:items-end basis-3/4">
           <h1 className={` ${styles.heroHeadText}`}>Tentang Kami</h1>
-          <p className={`${styles.paragrafText}`}>
+          <p className={`${styles.paragrafText} text-gray-700`}>
             <span className="font-bold">Kodeintekno</span> adalah mitra
             strategis Anda dalam transformasi digital, menghadirkan solusi
             inovatif yang menggabungkan kreativitas, teknologi terkini, dan

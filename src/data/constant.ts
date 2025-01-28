@@ -7,12 +7,16 @@ import {
 
 export const menuItem = [
   {
-    label: "Home",
-    href: "#",
+    label: "Beranda",
+    href: "#hero",
   },
   {
-    label: "About",
+    label: "Tentang",
     href: "#about",
+  },
+  {
+    label: "Layanan",
+    href: "#service",
   },
   {
     label: "Contact",
@@ -25,7 +29,7 @@ export const serviceData = [
     img: contentCreator,
     title: "Content Creation",
     deskripsi:
-      "Pembuatan konten berkualitas untuk media sosial dan kebutuhan pemasaran lainnya.",
+      "Pembuatan konten berkualitas untuk media sosial dan kebutuhan pemasaran.",
   },
   {
     img: grapichDesign,

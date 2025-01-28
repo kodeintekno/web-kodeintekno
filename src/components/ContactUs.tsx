@@ -15,7 +15,7 @@ const ContactUs = () => {
           <div>
             <label
               htmlFor="name"
-              className="block text-xl font-medium text-gray-700 mb-2"
+              className="block text-sm  text-gray-700 mb-2 md:text-base lg:text-lg max-w-full md:max-w-[80%] lg:max-w-[90%] mx-auto lg:mx-0 leading-relaxed lg:leading-9"
             >
               Nama Lengkap
             </label>
@@ -32,7 +32,7 @@ const ContactUs = () => {
           <div>
             <label
               htmlFor="email"
-              className="block text-xl font-medium text-gray-700 mb-2"
+              className="block text-sm  text-gray-700 mb-2 md:text-base lg:text-lg max-w-full md:max-w-[80%] lg:max-w-[90%] mx-auto lg:mx-0 leading-relaxed lg:leading-9"
             >
               Alamat Email
             </label>
@@ -49,7 +49,7 @@ const ContactUs = () => {
           <div>
             <label
               htmlFor="description"
-              className="block text-xl font-medium text-gray-700 mb-2"
+              className="block text-sm  text-gray-700 mb-2 md:text-base lg:text-lg max-w-full md:max-w-[80%] lg:max-w-[90%] mx-auto lg:mx-0 leading-relaxed lg:leading-9"
             >
               Jelaskan kebutuhan anda
             </label>
@@ -64,7 +64,7 @@ const ContactUs = () => {
           {/* Button */}
           <button
             type="submit"
-            className="w-full lg:w-auto px-8 py-2 bg-orange-400 text-white font-medium text-lg rounded-full hover:bg-orange-500 transition"
+            className="w-full lg:w-auto px-8 py-2 text-white font-medium text-lg rounded-full bg-gradient-to-r from-[#ffb158] to-[#f59e0b] hover:from-[#f59e0b] hover:to-[#feab1b] transition"
           >
             Mulai Konsultasi
           </button>

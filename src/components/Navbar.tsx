@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { kodeinTeknoLogo } from "@/assets";
 import Link from "next/link";
+import { menuItem } from "@/data/constant";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,36 +32,13 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-gray-700">
-          <li>
-            <a href="#hero" className="hover:text-orange-500">
-              Beranda
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="hover:text-orange-500">
-              Tentang
-            </a>
-          </li>
-          <li>
-            <a href="#service" className="hover:text-orange-500">
-              Layanan
-            </a>
-          </li>
-          {/* <li>
-            <a href="#" className="hover:text-orange-500">
-              Portofolio
-            </a>
-          </li> */}
-          {/* <li>
-            <a href="#" className="hover:text-orange-500">
-              Testimoni
-            </a>
-          </li> */}
-          <li>
-            <a href="#contact" className="hover:text-orange-500">
-              Kontak
-            </a>
-          </li>
+          {menuItem.map((item, index) => (
+            <li key={index}>
+              <a href={item.href} className="hover:text-orange-500">
+                {item.label}
+              </a>
+            </li>
+          ))}
         </ul>
 
         {/* Hamburger Menu (Mobile) */}
@@ -90,52 +68,17 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-md">
           <ul className="space-y-4 text-gray-700 p-4">
-            <li>
-              <a
-                href="#hero"
-                className="block hover:text-orange-500"
-                onClick={handleMenuClick}
-              >
-                Beranda
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="block hover:text-orange-500"
-                onClick={handleMenuClick}
-              >
-                Tentang
-              </a>
-            </li>
-            <li>
-              <a
-                href="#service"
-                className="block hover:text-orange-500"
-                onClick={handleMenuClick}
-              >
-                Layanan
-              </a>
-            </li>
-            {/* <li>
-              <a href="#" className="block hover:text-orange-500">
-                Portofolio
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block hover:text-orange-500">
-                Testimoni
-              </a>
-            </li> */}
-            <li>
-              <a
-                href="#contact"
-                className="block hover:text-orange-500"
-                onClick={handleMenuClick}
-              >
-                Kontak
-              </a>
-            </li>
+            {menuItem.map((item, index) => (
+              <li key={index}>
+                <a
+                  href={item.href}
+                  className="block hover:text-orange-500"
+                  onClick={handleMenuClick}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       )}

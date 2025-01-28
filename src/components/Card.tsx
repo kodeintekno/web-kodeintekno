@@ -13,7 +13,7 @@ const Card = ({ img, title, deskripsi }: CardProps) => {
         <Image alt="" src={img} className="w-[90px] lg:w-[130px] mt-12" />
 
         <h1 className="font-semibold text-xl lg:text-2xl my-5">{title}</h1>
-        <p className="text-base lg:text-xl w-[70%] text-center font-medium mb-5">
+        <p className="text-sm md:text-base lg:text-lg w-[80%] text-center font-medium mb-5 text-gray-700">
           {deskripsi}
         </p>
 

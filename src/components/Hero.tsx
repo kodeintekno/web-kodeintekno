@@ -19,7 +19,7 @@ const Hero = () => {
             untuk Mendukung Pertumbuhan dan Kesuksesan Bisnis Anda!
           </p>
           <div>
-            <button className="px-6 py-2 border-2 border-[#F59E0B] text-[#F59E0B] font-semibold rounded-full shadow-md hover:bg-[#F59E0B] hover:text-black transition duration-300 text-sm md:text-base lg:text-lg">
+            <button className="px-6 py-2 border-2 border-[#F59E0B]  text-[#F59E0B] font-semibold rounded-full shadow-md hover:bg-[#F59E0B] hover:text-white transition duration-300 text-sm md:text-base lg:text-lg">
               Mulai Konsultasi
             </button>
           </div>

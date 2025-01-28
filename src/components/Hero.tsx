@@ -11,10 +11,10 @@ const Hero = () => {
     >
       <div className="container mx-auto px-4 md:px-8 py-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-20">
         {/* Left Section */}
-        <div className={`text-center lg:text-left text-white space-y-6`}>
+        <div className={`text-center lg:text-left text-white space-y-2`}>
           <h1 className={`${styles.heroHeadText} `}>Creative Digital Agency</h1>
 
-          <p className="text-sm md:text-base lg:text-xl leading-relaxed max-w-[650px] mx-auto lg:mx-0">
+          <p className={`${styles.paragrafText}`}>
             Tempat Anda Menemukan Berbagai Solusi Digital dan Teknologi Terbaik
             untuk Mendukung Pertumbuhan dan Kesuksesan Bisnis Anda!
           </p>

@@ -30,6 +30,7 @@ const Service = () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
+  
   return (
     <div
       className="min-h-screen flex flex-col items-center bg-cover bg-no-repeat py-24"
@@ -37,7 +38,7 @@ const Service = () => {
       style={{ backgroundImage: `url(${serviceBg.src})` }}
     >
       <h1 className={` ${styles.heroHeadText}`}>Layanan Kami</h1>
-      <p className="max-w-[80%] md:max-w-[80%] lg:max-w-[64%] lg:leading-10 text-center text-white mb-[50px]">
+      <p className={`${styles.paragrafText} text-white text-center`}>
         Kami menyediakan berbagai layanan digital terpadu yang dirancang untuk
         mendukung perkembangan bisnis Anda, mulai dari pengembangan website
         hingga pemasaran digital.

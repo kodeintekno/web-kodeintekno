@@ -48,7 +48,7 @@ const Service = () => {
         className="w-full md:max-w-[620px] lg:max-w-[1200px] xl:max-w-[1650px]"
         setApi={setApi}
       >
-        <CarouselContent>
+        <CarouselContent className="px-8">
           {serviceData.map((data, index) => (
             <CarouselItem
               className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 flex justify-center"
@@ -59,7 +59,7 @@ const Service = () => {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="lg:hidden w-32 mx-auto flex justify-center gap-2 p-1rounded-l-full mt-8">
+      <div className="xl:hidden w-32 mx-auto flex justify-center gap-2 p-1rounded-l-full mt-8">
         {Array.from({ length: 4 }).map((_, index) => (
           <div
             key={index}

@@ -45,7 +45,7 @@ export const serviceData = [
   },
   {
     img: webDevelopment,
-    title: "Web Design Development",
+    title: "Web Development",
     deskripsi:
       "Solusi website Responsif dan profesional untuk berbagai kebutuhan bisnis.",
   },

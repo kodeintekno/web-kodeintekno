@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { aboutImg } from "@/assets";
-import { styles } from "./styles";
+import { styles } from "../styles";
 
 const About = () => {
   return (

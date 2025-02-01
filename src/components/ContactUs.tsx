@@ -19,10 +19,6 @@ const ContactUs = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  console.log("Service ID:", serviceId);
-  console.log("Template ID:", templateId);
-  console.log("Public Key:", publicKey);
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {

@@ -35,9 +35,9 @@ const Hero = () => {
           <div className="w-full max-w-[1080px] aspect-square relative">
             <Image
               src={heroAsset}
-              alt="Creative Digital Agency"
+              alt="Gambar visual kreatif untuk Digital Agency"
               layout="fill"
-              className="z-10 object-cover"
+              className="object-cover"
             />
           </div>
         </div>

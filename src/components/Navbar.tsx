@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { kodeinTeknoLogo } from "@/assets";
 import Link from "next/link";
 import { menuItem } from "@/data/constant";
+import { kodeinTeknoLogo } from "@/assets";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

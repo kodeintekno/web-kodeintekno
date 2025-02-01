@@ -1,4 +1,4 @@
-import { heroAsset, heroBg } from "@/assets";
+import { hero, heroBg } from "@/assets";
 import Image from "next/image";
 import { styles } from "./styles";
 
@@ -34,7 +34,7 @@ const Hero = () => {
         <div className="relative flex justify-center lg:justify-end">
           <div className="w-full max-w-[1080px] aspect-square relative">
             <Image
-              src={heroAsset}
+              src={hero}
               alt="Gambar visual kreatif untuk Digital Agency"
               layout="fill"
               className="object-cover"

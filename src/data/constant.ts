@@ -41,7 +41,7 @@ export const serviceData = [
     img: digitalMarketing,
     title: "Digital Marketing",
     deskripsi:
-      "Solusi pemasaran online yang efeltif dengan berbagai macam pendekatan.",
+      "Solusi pemasaran online yang efektif dengan berbagai macam pendekatan.",
   },
   {
     img: webDevelopment,

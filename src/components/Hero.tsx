@@ -23,7 +23,7 @@ const Hero = () => {
               href="https://api.whatsapp.com/send?phone=6282170270241&text=Assalamualaikum%20Admin,%20saya%20ingin%20memulai%20konsultasi%20terkait%20layanan%20yang%20tersedia.%20Mohon%20informasinya."
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2 border-2 border-[#F59E0B]  text-[#F59E0B] font-semibold rounded-full shadow-md hover:bg-[#F59E0B] hover:text-white transition duration-300 text-sm md:text-base lg:text-lg"
+              className="px-6 py-2 border-2 border-[#F59E0B] text-[#F59E0B] font-semibold rounded-full shadow-md hover:bg-gradient-to-r from-[#ffb158] to-[#f59e0b] hover:text-white transition duration-300 text-sm md:text-base lg:text-lg hover:border-transparent"
             >
               Mulai Konsultasi
             </a>

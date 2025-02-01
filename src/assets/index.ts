@@ -11,6 +11,7 @@ import instagramLogo from "./instagram.svg";
 import facebookLogo from "./facebook.svg";
 import kodeinTeknoLogo from "./kodein-tekno-logo.png";
 import kodeinTeknoLogo2 from "./kodeinLogo.svg";
+import kodeinTeknoLogo3 from "./logo3.jpg";
 
 export {
   aboutImg,
@@ -26,4 +27,5 @@ export {
   instagramLogo,
   kodeinTeknoLogo,
   kodeinTeknoLogo2,
+  kodeinTeknoLogo3,
 };

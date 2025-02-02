@@ -1,4 +1,4 @@
-import About from "@/components/ui/About";
+import About from "@/components/About";
 import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";

@@ -12,6 +12,8 @@ import facebookLogo from "./facebook.svg";
 import kodeinTeknoLogo from "./kodein-tekno-logo.png";
 import kodeinTeknoLogo2 from "./kodeinLogo.svg";
 import kodeinTeknoLogo3 from "./logo3.jpg";
+import uiuxDesign from "./ui-ux-design-img.svg";
+import eduCenter from "./edu-center-img.svg";
 
 export {
   aboutImg,
@@ -28,4 +30,6 @@ export {
   kodeinTeknoLogo,
   kodeinTeknoLogo2,
   kodeinTeknoLogo3,
+  uiuxDesign,
+  eduCenter,
 };

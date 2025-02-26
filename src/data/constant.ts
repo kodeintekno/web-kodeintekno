@@ -3,6 +3,8 @@ import {
   digitalMarketing,
   grapichDesign,
   contentCreator,
+  eduCenter,
+  uiuxDesign,
 } from "@/assets";
 
 export const menuItem = [
@@ -25,6 +27,18 @@ export const menuItem = [
 ];
 
 export const serviceData = [
+  {
+    img: uiuxDesign,
+    title: "Ui/Ux Design",
+    deskripsi:
+      "Pembuatan konten berkualitas untuk media sosial dan kebutuhan pemasaran.",
+  },
+  {
+    img: eduCenter,
+    title: "Edu Center",
+    deskripsi:
+      "Pembuatan konten berkualitas untuk media sosial dan kebutuhan pemasaran.",
+  },
   {
     img: contentCreator,
     title: "Content Creation",

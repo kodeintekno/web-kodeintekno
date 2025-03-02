@@ -4,7 +4,6 @@ import Card from "./ui/Card";
 import { styles } from "./styles";
 
 import { serviceBg } from "@/assets";
-import React from "react";
 // import Image from "next/image";
 
 const Service = () => {

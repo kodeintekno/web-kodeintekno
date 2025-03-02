@@ -1,0 +1,48 @@
+import Image from "next/image";
+import { serviceBg, portofolioImg } from "@/assets";
+import { styles } from "./styles";
+
+const PortofolioSection = () => {
+  return (
+    <>
+      <div
+        className="flex flex-col-reverse items-center justify-center min-h-screen bg-cover bg-no-repeat md:flex-col-reverse md:items-center md:justify-center md:gap-y-32 lg:flex-row lg:justify-center lg:items-center lg:gap-32 xl:flex-row xl:justify-center xl:items-center xl:gap-52"
+        style={{ backgroundImage: `url(${serviceBg.src})` }}
+      >
+        {/* Left Section */}
+        <Image
+          src={portofolioImg}
+          alt=""
+          className="w-[68%] md:w-[50%] lg:w-[38%] xl:w-[35%] pt-20 md:pt-0 "
+        />
+        {/* Right Section */}
+        <div className="flex flex-col max-w-[600px] ">
+          <div className="w-full flex-col flex items-center gap-y-8">
+            <h1 className={`${styles.heroHeadText} flex justify-center`}>
+              Portofolio Kami
+            </h1>
+            <p
+              className={`${styles.paragrafText} text-white text-center w-[85%]`}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac
+              semper enim, at porttitor velit. Ut consequat enim nisl, vel
+              rutrum nunc volutpat at. Mauris odio tellus, venenatis facilisis
+              ligula.
+            </p>
+          </div>
+          <div className="flex justify-center pt-9">
+            <button
+              className={`border-4 border-[#FB9E3C] rounded-2xl text-[#FB9E3C] 
+  w-[200px] h-[50px] sm:w-[250px] sm:h-[60px] md:w-[300px] md:h-[65px] 
+  lg:w-[340px] lg:h-[73px] ${styles.paragrafText} md:${styles.paragrafText} lg:${styles.paragrafText} xl:${styles.paragrafText}`}
+            >
+              See More
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default PortofolioSection;

@@ -14,6 +14,8 @@ import kodeinTeknoLogo2 from "./kodeinLogo.svg";
 import kodeinTeknoLogo3 from "./logo3.jpg";
 import uiuxDesign from "./ui-ux-design-img.svg";
 import eduCenter from "./edu-center-img.svg";
+import teamCard from "./team-card.png";
+import portofolioImg from "./portofolio-img.png";
 
 export {
   aboutImg,
@@ -32,4 +34,6 @@ export {
   kodeinTeknoLogo3,
   uiuxDesign,
   eduCenter,
+  teamCard,
+  portofolioImg,
 };

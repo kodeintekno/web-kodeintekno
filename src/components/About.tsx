@@ -5,7 +5,7 @@ import { styles } from "./styles";
 const About = () => {
   return (
     <div className="h-auto  mb-10 py-20" id="about">
-      <div className="flex flex-col lg:flex-row-reverse mx-4 md:mx-12 lg:mx-[200px] mt-8 md:mt-12 items-center gap-8 lg:gap-16">
+      <div className="flex flex-col-reverse lg:flex-row-reverse mx-4 md:mx-12 lg:mx-[200px] mt-8 md:mt-12 items-center gap-8 lg:gap-16">
         {/* Text Content */}
         <div className="flex flex-col md:gap-2 lg:gap-4 text-center lg:text-right items-center lg:items-end basis-3/4">
           <h1 className={` ${styles.heroHeadText}`}>Tentang Kami</h1>

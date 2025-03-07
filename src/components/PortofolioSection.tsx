@@ -6,14 +6,20 @@ const PortofolioSection = () => {
   return (
     <>
       <div
-        className="flex flex-col-reverse items-center justify-center min-h-screen bg-cover bg-no-repeat md:flex-col-reverse md:items-center md:justify-center md:gap-y-32 lg:flex-row lg:justify-center lg:items-center lg:gap-32 xl:flex-row xl:justify-center xl:items-center xl:gap-52"
+        className="flex flex-col-reverse items-center justify-center min-h-screen bg-cover bg-no-repeat md:flex-col-reverse md:items-center md:justify-center md:gap-y-8 lg:flex-row lg:justify-center lg:items-center lg:gap-32 xl:flex-row xl:justify-center xl:items-center xl:gap-52"
         style={{ backgroundImage: `url(${serviceBg.src})` }}
       >
         {/* Left Section */}
+        <button
+          className={`block border-4 border-[#FB9E3C] text-[#FB9E3C] rounded-2xl px-4 py-2 lg:hidden w-[200px] h-[50px] sm:w-[250px] sm:h-[60px] md:w-[300px] md:h-[65px] 
+    lg:w-[340px] lg:h-[73px] ${styles.paragrafText} md:${styles.paragrafText} lg:${styles.paragrafText} xl:${styles.paragrafText} mt-10 hover:bg-[#FB9E3C] hover:border-none hover:text-white`}
+        >
+          See More
+        </button>
         <Image
           src={portofolioImg}
           alt=""
-          className="w-[68%] md:w-[50%] lg:w-[38%] xl:w-[35%] pt-20 md:pt-0 "
+          className="w-[68%] md:w-[50%] lg:w-[38%] xl:w-[35%] pt-0 "
         />
         {/* Right Section */}
         <div className="flex flex-col max-w-[600px] ">
@@ -34,7 +40,7 @@ const PortofolioSection = () => {
             <button
               className={`border-4 border-[#FB9E3C] rounded-2xl text-[#FB9E3C] 
   w-[200px] h-[50px] sm:w-[250px] sm:h-[60px] md:w-[300px] md:h-[65px] 
-  lg:w-[340px] lg:h-[73px] ${styles.paragrafText} md:${styles.paragrafText} lg:${styles.paragrafText} xl:${styles.paragrafText}`}
+  lg:w-[340px] lg:h-[73px] ${styles.paragrafText} md:${styles.paragrafText} lg:${styles.paragrafText} xl:${styles.paragrafText} hidden lg:block hover:bg-[#FB9E3C] hover:border-none hover:text-white`}
             >
               See More
             </button>
